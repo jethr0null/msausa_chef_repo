@@ -1,0 +1,16 @@
+{
+  "chef": {
+    "chef_server_url": "https://api.opscode.com/organizations/msausa",
+    "validation_client_name": "msausa-validator",
+    "validation_key_path": ".chef/msausa-validator.pem",
+    "client_key": ".chef/msausa.pem",
+    "node_name": "msausa"
+  },
+  "vagrant": {
+    "vm": {
+      "box": "opscode-ubuntu-12.04-i386",
+      "box_url": "https://opscode-vm.s3.amazonaws.com/vagrant/opscode_ubuntu-12.04-i386_provisionerless.box",
+      "provision": "chef_client"
+    }
+  }
+}
